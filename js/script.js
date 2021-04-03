@@ -1,3 +1,9 @@
+//create new list item from text input
+function newItem(){
+  let listItem = $('<li></li>');
+  let inputText = $('#input').val();
+  listItem.append(inputText);
+
   if (inputText === ' '){
     alert("You must write a task!!")
   }else {
